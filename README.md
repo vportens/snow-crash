@@ -79,3 +79,18 @@ L'objectif est de contourner ca pour executer getflag dans /bin/getflag telque :
 
 ## Level05:
 
+Ici pas de fichier.
+Petit retour a ```find / -user flag05 2> /dev/null```    
+ Ici un fichier qui nous indique que regulierement les scripts dans ```/opt/openarenaserver/```  puis les supprimes.   
+ Donc on creer un petit script qui avec ```/bin/getflag > /tmp/reslut.txt``` (pour stocker le resultat de l'execution et on attend que l'ordinateur lance autoatiquement le script.) (viuaaale9huek52boumoomioc)
+
+ ## Level06:
+
+ Dans le code fournit dans level06.php on remarque  une expression reguliere qui utilise /e qui signifie all.   
+ Cette expression est deprecated car on peut y faire des injections de code.   
+ C'est ce qu'on va faire.  
+ Pour cela on doit utiliser l'expression reguliere qui utilise /e  donc notre fichier doit contenir ```[x {commmand here}]```
+
+```echo '[x {${`/bin/bash -c "/bin/getflag"`}}]' > /tmp/exploit.txt```
+
+wiok45aaoguiboiki2tuin6ub
