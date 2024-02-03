@@ -45,14 +45,12 @@ int main(int argc,char **argv,char **envp)
 }
 ```
 
-On remarque 2 choses, on doit lire un fichier qui ne doit pas contenir ```token```
+On remarque 2 choses, on doit lire un fichier qui ne doit pas contenir `token`
 Ici le fichier token a seulement les droits de lecture et de d'ecriture par le owner.  
 Mais un moyen assez facile de changer cela est de faire un lien symbolique telque :   
-```ln -s /home/user/level08/token /tmp/test.txt```
-Maintenant on poura executer le binaire avec notre fichier ```test.txt``` (qui pointe vers token) 
+`ln -s /home/user/level08/token /tmp/test.txt`
+Maintenant on poura executer le binaire avec notre fichier `test.txt` (qui pointe vers token) 
 
-quif5eloekouj29ke0vouxean
+`quif5eloekouj29ke0vouxean`
 
-don't forget to ```su flag08 ```
-
-25749xKZ8L7DkSCwJkT9dyv6f
+don't forget to `su flag08 `

