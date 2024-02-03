@@ -66,4 +66,4 @@ int main() {
 }
 ```
 On a juste copier la fonction ft_des, dans en modifiant les variables qui sont undefinde et lance la fonction.
-Et notre token et la : 2A31L79asukciNyi8uppkEuSx
+Et notre token et la : `2A31L79asukciNyi8uppkEuSx`

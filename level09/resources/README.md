@@ -26,11 +26,11 @@ while (true)
 ```
 
 c'est le traitement de l'argument donne lors de l'exec, qui va incrementer chaque caractere de sa position, Exemple :    
-```
+```bash
 ./level09 aaaaa
 abcde
 ```
-Lors de la lecture du fichier ```token``` on voit le resultat du password a travers cette fonction et nous devons retrouver le password original. L'operation n'est pas complique et peut etre fais a la main (moi) ou avec une fonction (merci monsieur fcatinau pour celle-ci) :    
+Lors de la lecture du fichier `token` on voit le resultat du password a travers cette fonction et nous devons retrouver le password original. L'operation n'est pas complique et peut etre fais a la main (moi) ou avec une fonction (merci monsieur fcatinau pour celle-ci) :    
 
 ```c
 #include <fcntl.h>
@@ -58,4 +58,3 @@ int main(int argc, char **argv)
 ./a.out token
 f3iji1ju5yuevaus41q1afiuq
 ```
-s5cAJpM8ev6XHw998pRWG728z
