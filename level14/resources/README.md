@@ -1,6 +1,10 @@
 ## Level14:
 Le principe est a peut pret le meme, ici aucun fichier disponible, 
+<<<<<<< HEAD
 On va decompiler getflag directement, puis creer la fonction `ft_des` :
+=======
+On va decompiler getflag directement, puis creer la fonction ```ft_des``` :
+>>>>>>> origin/dev
 ```c
 #include <stdio.h>   // Inclure pour printf
 #include <string.h>  // Inclure pour strdup
